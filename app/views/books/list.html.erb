@@ -1,0 +1,54 @@
+<style>
+table,th,td
+{
+border:1px solid gray;
+border-collapse:collapse
+}
+th
+{
+text-align:left;
+}
+table
+{
+font-family:"Arial", sans-serif;
+}
+</style>
+
+<table border="1" style="width:500px">
+<tr>
+  <th>Title</th>
+  <th>Author</th>
+</tr>
+<tr>
+  <td>
+  <%= Book.first["title"] %>
+  </td>
+  <td>
+  <%= Book.first["author"] %>
+  </td>
+</tr>
+<tr>
+  <td>
+  <%= Book.read(2)["title"] %>
+  </td>
+  <td>
+  <%= Book.read(2)["author"] %>
+  </td>
+</tr>
+<tr>
+  <td>
+  <%= Book.read(3)["title"] %>
+  </td>
+  <td>
+  <%= Book.read(3)["author"] %>
+  </td>
+</tr>
+<tr>
+  <td>
+  <%= Book.read(4)["title"] %>
+  </td>
+  <td>
+  <%= Book.read(4)["author"] %>
+  </td>
+</tr>
+
