@@ -1,0 +1,47 @@
+<h1>Bookstore</h1>
+
+<p>
+  <%= link_to "Go back to the book list", "/books" %>
+</p>
+
+<hr>
+
+<% the_id = params["id"] %>
+<% the_book = Bookdata.read(the_id) %>
+
+<h2><%= the_book["book_title"] %></h2>
+
+<ul>
+  <li>
+    <b>Author:</b> <%= the_book["author"] %>
+  </li>
+  <li>
+    <b>Price:</b> $<%= the_book["price"] %>
+  </li>
+  <% bname = the_book["book_title"] %>
+  <li>
+    <b>Average rating:</b> <%= Reviews.where("book_title" => bname).average("star_rating") %> out of 5
+  </li>
+</ul>
+
+<table border="1" style="width:300px">
+<tr>
+  <th>Review</th>
+  <th>Rating</th>
+</tr>
+
+  <% all_reviews = Reviews.where("book_title" => the_book["book_title"]) %>
+  <% all_reviews.each do |rev| %>
+
+<tr>
+  <td>
+     <%= rev["review"] %>
+  </td>
+  <td>
+    <%= rev["star_rating"] %>
+  </td>
+</tr>
+<% end %>
+</table>
+
+

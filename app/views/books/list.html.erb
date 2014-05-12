@@ -14,41 +14,37 @@ font-family:"Arial", sans-serif;
 }
 </style>
 
+
+<h1>Bookstore</h1>
+
+<hr>
+
+<h2>Books</h2>
+
 <table border="1" style="width:500px">
 <tr>
   <th>Title</th>
   <th>Author</th>
+  <th>Average Rating <br>(out of 5)</th>
 </tr>
+
+<% all_books = Bookdata.read %>
+<% all_books.each do |bookdata| %>
+
 <tr>
   <td>
-  <%= Book.first["title"] %>
+    <%= link_to bookdata["book_title"], "/books/#{bookdata["id"]}" %>
   </td>
   <td>
-  <%= Book.first["author"] %>
+    <%= bookdata["author"] %>
   </td>
-</tr>
-<tr>
+  <% bname = bookdata["book_title"] %>
   <td>
-  <%= Book.read(2)["title"] %>
+    <%= Reviews.where("book_title" => bname).average("star_rating") %>
   </td>
-  <td>
-  <%= Book.read(2)["author"] %>
-  </td>
-</tr>
-<tr>
-  <td>
-  <%= Book.read(3)["title"] %>
-  </td>
-  <td>
-  <%= Book.read(3)["author"] %>
-  </td>
-</tr>
-<tr>
-  <td>
-  <%= Book.read(4)["title"] %>
-  </td>
-  <td>
-  <%= Book.read(4)["author"] %>
-  </td>
-</tr>
+  </tr>
+
+  <% end %>
+</table>
+</style>
 

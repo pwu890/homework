@@ -1,0 +1,16 @@
+<h1>Bookstore</h1>
+
+<hr>
+
+<h2>Looking for a great book?</h2>
+<br>
+
+<% edpick = Reviews.group("book_title").order("avg(star_rating) desc").first[:book_title] %>
+
+<b>Check out the Editor's Pick:</b>
+<%= link_to edpick, "/books/#{Bookdata.find_by("book_title" => edpick)[:id]}" %>
+
+<p>
+For more books, <%= link_to "click here to see what else is for sale", "/books" %>
+</p>
+

@@ -1,0 +1,38 @@
++----+---------------+-------------+---------------------------------+---------+
+| id | book_title    | star_rating | review                          | book_id |
++----+---------------+-------------+---------------------------------+---------+
+| 1  | Orphan Train  | 5           | Riveting!                       |         |
+| 2  | Orphan Train  | 2           | About as dull as you can get.   |         |
+| 3  | Orphan Train  | 3           | Not bad.                        |         |
+| 4  | Shadow Spell  | 4           | Great book, and not too many... |         |
+| 5  | Shadow Spell  | 4           | Excellent font and margins. ... |         |
+| 6  | Shadow Spell  | 4           | Worth reading when there isn... |         |
+| 7  | Shadow Spell  | 1           | Didn't understand it at all.    |         |
+| 8  | The Alchemist | 2           | I thought this was about how... |         |
+| 9  | The Alchemist | 4           | Suspensful plot, good charac... |         |
+| 10 | The Alchemist | 5           | Perfect. A work of art.         |         |
+| 11 | The Alchemist | 3           | Kind of confusing.              |         |
+| 12 | Orphan Train  | 5           | Riveting!                       | 0       |
+| 13 | Orphan Train  | 2           | About as dull as you can get.   | 0       |
+| 14 | Orphan Train  | 3           | Not bad.                        | 0       |
+| 15 | Shadow Spell  | 4           | Great book, and not too many... | 0       |
+| 16 | Shadow Spell  | 4           | Excellent font and margins. ... | 0       |
+| 17 | Shadow Spell  | 4           | Worth reading when there isn... | 0       |
+| 18 | Shadow Spell  | 1           | Didn't understand it at all.    | 0       |
+| 19 | The Alchemist | 2           | I thought this was about how... | 0       |
+| 20 | The Alchemist | 4           | Suspensful plot, good charac... | 0       |
+| 21 | The Alchemist | 5           | Perfect. A work of art.         | 0       |
+| 22 | The Alchemist | 3           | Kind of confusing.              | 0       |
+| 23 | Orphan Train  | 5           | Riveting!                       |         |
+| 24 | Orphan Train  | 2           | About as dull as you can get.   |         |
+| 25 | Orphan Train  | 3           | Not bad.                        |         |
+| 26 | Shadow Spell  | 4           | Great book, and not too many... |         |
+| 27 | Shadow Spell  | 4           | Excellent font and margins. ... |         |
+| 28 | Shadow Spell  | 4           | Worth reading when there isn... |         |
+| 29 | Shadow Spell  | 1           | Didn't understand it at all.    |         |
+| 30 | The Alchemist | 2           | I thought this was about how... |         |
+| 31 | The Alchemist | 4           | Suspensful plot, good charac... |         |
+| 32 | The Alchemist | 5           | Perfect. A work of art.         |         |
+| 33 | The Alchemist | 3           | Kind of confusing.              |         |
++----+---------------+-------------+---------------------------------+---------+
+33 rows in set
